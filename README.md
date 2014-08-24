@@ -1,3 +1,10 @@
+# Docker recipe for [insight-doge-api](https://github.com/Dogeparty/insight-doge-api)
+
+See the global picture how this container interacts with other components to run Dogeparty:
+
+[Global Component Overview](http://www.inkpad.io/1GMXYwxl4Q)
+
+
 ## Build
 
     git clone https://github.com/Dogeparty/insight-doge-api.git
