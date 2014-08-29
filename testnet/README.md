@@ -15,14 +15,7 @@
     docker run -it --name=insight-doge-testnet --volumes-from=insight-doge-testnet-data --link dogecoind-testnet:dogecoind insight-doge:testnet bash
 
 
-## ENVs
-
-    export BITCOIND_HOST=$DOGECOIND_PORT_44555_TCP_ADDR
-    export BITCOIND_PORT=$DOGECOIND_PORT_44555_TCP_PORT
-    export BITCOIND_P2P_PORT=$DOGECOIND_PORT_44556_TCP_PORT
-
-
 ## Run Process
 
-    node insight.js
+    BITCOIND_HOST=dogecoind BITCOIND_PORT=44555 BITCOIND_P2P_PORT=44556 node insight.js
 

@@ -22,14 +22,7 @@ See the global picture how this container interacts with other components to run
     docker run -it --name=insight-doge --volumes-from=insight-doge-data --link dogecoind:dogecoind insight-doge:v1 bash
 
 
-## ENVs
-
-    export BITCOIND_HOST=$DOGECOIND_PORT_22555_TCP_ADDR
-    export BITCOIND_PORT=$DOGECOIND_PORT_22555_TCP_PORT
-    export BITCOIND_P2P_PORT=$DOGECOIND_PORT_22556_TCP_PORT
-
-
 ## Run Process
 
-    node insight.js
+    BITCOIND_HOST=dogecoind BITCOIND_PORT=22555 BITCOIND_P2P_PORT=22556 node insight.js
 
