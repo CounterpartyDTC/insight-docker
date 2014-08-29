@@ -2,7 +2,7 @@
 
     git clone https://github.com/Dogeparty/insight-doge-api.git
     cd insight-doge-api
-    ln path/to/insight-docker/Dockerfile
+    ln path/to/insight-docker/testnet/Dockerfile
     docker build -t insight-doge:testnet .
 
 ## Data
