@@ -24,5 +24,5 @@ See the global picture how this container interacts with other components to run
 
 ## Run Process
 
-    BITCOIND_HOST=dogecoind BITCOIND_PORT=22555 BITCOIND_P2P_PORT=22556 node insight.js
+    node insight.js
 

@@ -19,5 +19,5 @@
 
 Precondition: Make sure to have dogecoind fully synchronized.
 
-    BITCOIND_HOST=dogecoind BITCOIND_PORT=44555 BITCOIND_P2P_PORT=44556 node insight.js
+    node insight.js
 

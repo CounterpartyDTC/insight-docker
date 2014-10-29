@@ -1,13 +1,12 @@
 FROM node
 
-# replace this with your application's default port
 EXPOSE 3000
 
 ENV HOME /root
 
 # config
 ENV NODE_ENV production
-ENV BITCOIND_HOST 192.168.59.3
+ENV BITCOIND_HOST dogecoind
 ENV BITCOIND_PORT 22555
 ENV BITCOIND_P2P_PORT 22556
 ENV BITCOIND_USER user
@@ -22,12 +21,10 @@ ENV INSIGHT_DB /root/data
 
 VOLUME /root/data
 
-# replace this with your main "server" script file
 CMD [ "node", "insight.js" ]
 
 ADD . /usr/src/app
 WORKDIR /usr/src/app
 
-# install your application's dependencies
 RUN npm install
 
